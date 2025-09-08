@@ -5,7 +5,7 @@ public class Es3 {
         Scanner scanner= new Scanner(System.in);
         int  n;
         double l1, l2, lt1, lt2, lt3;
-      /*  System.out.println("----------------------rettangolo--------------------------");
+        System.out.println("----------------------rettangolo--------------------------");
         System.out.println("inserire la lunghezza del primo lato del rettangolo:");
         l1= Double.parseDouble(scanner.nextLine());
         System.out.println("inserire la lunghezza del secondo lato del rettangolo:");
@@ -17,7 +17,7 @@ public class Es3 {
 
         System.out.println("inserire un numero:");
         n= Integer.parseInt(scanner.nextLine());
-        System.out.println(pariDispari(n)); */
+        System.out.println(pariDispari(n));
 
         System.out.println("----------------------triangolo--------------------------");
         System.out.println("inserire il primo lato del triangolo:");
@@ -100,7 +100,7 @@ public class Es3 {
         }
 
         lStar=(lmax/2 + ((lmed*lmed)/(2*lmax)) - ((lmin*lmin)/(2*lmax)));
-        
+
         h= Math.sqrt((lmed*lmed) - (lStar*lStar));
 
         area=( lmax * h)/2;
