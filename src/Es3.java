@@ -5,6 +5,7 @@ public class Es3 {
         Scanner scanner= new Scanner(System.in);
         int  n;
         double l1, l2, lt1, lt2, lt3;
+        
         System.out.println("----------------------rettangolo--------------------------");
         System.out.println("inserire la lunghezza del primo lato del rettangolo:");
         l1= Double.parseDouble(scanner.nextLine());
@@ -98,6 +99,14 @@ public class Es3 {
             System.out.println("le misure fornite non sono un poligono!");
             return 0;
         }
+
+
+
+        /*
+
+        poichè si ha lmed^2 = lStar^2 + h^2 e lmin^2 = h^2 + (lmax - lStar)^2,
+        mettendo le due equazioni a sistema si srcavano h e lStar
+         */
 
         lStar=(lmax/2 + ((lmed*lmed)/(2*lmax)) - ((lmin*lmin)/(2*lmax)));
 
